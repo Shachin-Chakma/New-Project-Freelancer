@@ -6,7 +6,7 @@
 
 body {
     background: rgb(255, 255, 255);
-    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(184, 255, 216, 1) 100%);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 50%, rgba(184, 255, 216, 1) 100%);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -222,6 +222,11 @@ a:hover {
     margin-top: 50px;
 }
 
+.divider {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* left body */
 .body-left-side {
     background: #fff;
@@ -256,11 +261,23 @@ a:hover {
     font-size: 25px;
 }
 
+.items-title {
+    font-family: canela-thin;
+}
+
 .item-discount-set {
     margin-top: 10px;
     color: black;
     display: flex;
     justify-content: space-between;
+}
+
+/* Body Right Side */
+.body-right-side {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
 }
 
 /* Lower Section Start */
@@ -331,14 +348,18 @@ a:hover {
 }
 
 /* body right */
+
+
 .item-sell-final-container {
     display: flex;
     flex-direction: column;
 }
+
 .handle-container {
     display: flex;
     justify-content: space-between;
 }
+
 .custom-color {
     color: gray;
 }
@@ -371,16 +392,22 @@ a:hover {
     align-items: flex-end;
 }
 
+.cart-button-container span {
+    margin-left: 20px;
+}
+
 .cart-button {
     display: flex;
     justify-content: space-between;
     padding: 10px 6px;
     margin-bottom: 8px;
-    width: 280px;
+    width: 380px;
+    height: 60px;
     border: 2px solid rgb(75, 71, 71);
-    border-radius: 8px;
+    border-radius: 15px;
     font-size: 14px;
     font-weight: bolder;
+    align-items: center;
 }
 
 .pay-button {
