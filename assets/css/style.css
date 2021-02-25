@@ -12,13 +12,70 @@ body {
 
 /* Heaader Section Start */
 /* Left Side Start */
+.left-side {
+    position: relative;
+}
 .logo img {
-    width: 50%;
+    width: 25%;
+    position: absolute;
+    top: 40px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 85px;
+    left: 170px;
+}
+
+.menu-bar {
+    background: rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+
+.menu-bar .bar {
+    margin: auto;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+.after-click-menu {
+    background: #fff;
+    width: 250px;
+    height: 185px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.after-click-menu-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.after-click-menu ul {
+    list-style: none;
+}
+
+.after-click-menu ul li {
+    margin-top: 15px;
+}
+
+.menu-bar .menu-text {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    text-transform: uppercase;
 }
 
 .menu-btn .menu-bar .bar {
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background: #000;
     margin-bottom: 5px;
     border-radius: 20px;
@@ -30,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 70px;
     height: 50px;
     background: #fff;
     border-radius: 100px;
@@ -49,19 +106,99 @@ body {
 
 /* Middle Side End */
 /* Right Side Start */
+.right-side {
+    position: relative;
+}
+
+.cart {
+    text-transform: uppercase;
+    position: absolute;
+    top: 83px;
+    right: 350px;
+}
+
+.cart .cart-number {
+    position: absolute;
+    top: -10px;
+    right: -60px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.cart .cart-number p {
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    font-weight: bold;
+}
+
 .profile img {
     width: 15%;
     border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    right: 120px;
+    z-index: 2;
 }
 
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-btn {
+    position: absolute;
+    right: 50px;
+    width: 80px;
+    height: 50px;
+    background: #fff;
+    top: 70px;
+    border-radius: 50px;
+}
+
+.hover-btn i {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+.dropdown-profile {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 3;
+    right: 50px;
+    top: 110px;
+}
+
+.dropdown-profile ul {
+    list-style: none;
+}
+
+.dropdown-profile ul li {
+    margin: 10px 0;
+}
+
+.dropdown:hover .dropdown-profile {
+    display: block;
+}
 /* Right Side End */
 /* Header Section End */
 
+
+/* Lower Section Start */
 /* base designs */
 a {
     text-decoration: none;
     color: black;
 }
+
 a:hover {
     color: dimgrey;
 }
@@ -70,10 +207,11 @@ a:hover {
 .three-dot-container {
     position: fixed;
     bottom: 20px;
-    left:100px;
+    left: 100px;
 }
+
 .three-dot-btn {
-    border-radius: 5px!important;
+    border-radius: 5px !important;
     background-color: rgba(230, 230, 250, 0.829);
     border: 0px;
     box-shadow: 2px rgba(211, 211, 211, 0.637);
@@ -81,14 +219,15 @@ a:hover {
     font-size: 20px;
     font-weight: bolder;
 }
-.cart-button-container{
+
+.cart-button-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
 .cart-button {
-    display : flex;
+    display: flex;
     justify-content: space-between;
     padding: 10px 6px;
     margin-bottom: 8px;
@@ -98,8 +237,11 @@ a:hover {
     font-size: 14px;
     font-weight: bolder;
 }
+
 .pay-button {
-    color:white;
+    color: white;
     background-color: rgb(5, 5, 59);
     border: 2px solid rgb(5, 5, 59);
 }
+
+/* Lower Section End */
