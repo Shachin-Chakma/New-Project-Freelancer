@@ -10,6 +10,26 @@ body {
     height: 100vh;
 }
 
+/* Universal designs */
+/* base designs */
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: dimgrey;
+}
+/* btn color */
+.custom-btn {
+    /* border-radius: 5px!important; */
+    background-color: rgba(230, 230, 250, 0.829)!important;
+    border: 1px transparent!important;
+}
+.custom-btn:hover {
+    border-color:1px solid black!important;
+    background-color: none;
+}
+
 /* Heaader Section Start */
 /* Left Side Start */
 .logo img {
@@ -57,14 +77,73 @@ body {
 /* Right Side End */
 /* Header Section End */
 
-/* base designs */
-a {
-    text-decoration: none;
+
+/* body design */
+
+/* left body */
+.items-container {
+    display: flex;
+    
+}
+.items-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+}
+.item-details span {
+    color: gray;
+}
+.item-discount-set {
+    margin-top: 10px;
     color: black;
+    display:flex;
+    justify-content: space-between;
 }
-a:hover {
-    color: dimgrey;
+.item-discount-set .custom-btn {
+    width: 50px!important;
+    height: 40px!important;
+    color:black!important;
+
 }
+.item-incre-decre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.item-incre-decre button {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.item-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.item-price > span {
+    color: gray;
+}
+.item-price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.item-discount {
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+}
+.item-discount span {
+    color: gray;
+}
+
 
 /* footer section */
 .three-dot-container {
