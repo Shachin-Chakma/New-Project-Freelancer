@@ -330,6 +330,19 @@ a:hover {
     color: gray;
 }
 
+/* body right */
+.item-sell-final-container {
+    display: flex;
+    flex-direction: column;
+}
+.handle-container {
+    display: flex;
+    justify-content: space-between;
+}
+.custom-color {
+    color: gray;
+}
+
 /* Lower Section Start */
 #lower-section {
     margin-top: 70px;
