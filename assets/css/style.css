@@ -6,8 +6,8 @@
 
 body {
     background: rgb(255, 255, 255);
-    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(249, 255, 207, 1) 100%);
-    /* height: 100vh; */
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(184, 255, 216, 1) 100%);
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Universal designs */
@@ -247,6 +247,13 @@ a:hover {
 
 .item-details span {
     color: gray;
+    font-size: 12px;
+}
+
+.item-name {
+    font-family: canela-thin;
+    font-weight: 800;
+    font-size: 25px;
 }
 
 .item-discount-set {
@@ -262,11 +269,21 @@ a {
     text-decoration: none;
 }
 
+button.btn.btn-outline-dark {
+    border-radius: 10px;
+}
+
+button.btn.btn-outline-dark.custom-btn {
+    background: #e6e6fa8a !important;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+}
+
 .item-discount-set .custom-btn {
     width: 50px !important;
     height: 40px !important;
     color: black !important;
-
 }
 
 .item-incre-decre {
